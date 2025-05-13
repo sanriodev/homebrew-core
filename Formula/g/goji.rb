@@ -7,9 +7,7 @@ class Goji < Formula
   url "https://github.com/sanriodev/goji/archive/refs/tags/v1.4.1.tar.gz"
   sha256 "9543a521a9f59fd8fba8b33681ef905122826740c82a78acdedac2dce9b15d3c"
   license "MIT"
-  
   depends_on "go" => :build
-  
   def install
     system "go", "build", *std_go_args
   end
